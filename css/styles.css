@@ -68,7 +68,19 @@ body {
   color: var(--secondary-text-color);
 }
 
+.page-nav-list {
+  display: flex;
+}
+
+.page-nav-item + .page-nav-item {
+  margin-left: 40px;
+}
+
 .page-nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -85,7 +97,19 @@ body {
   font-style: normal;
 }
 
+.contact-list {
+  display: flex;
+}
+
+.contact-item + .contact-item {
+  margin-left: 40px;
+}
+
 .contact-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -176,6 +200,10 @@ body {
   margin-bottom: 120px;
 }
 
+.what-are-we-doing-img {
+  display: block;
+}
+
 /* ============/What are we doing============ */
 
 /* ============Our team============ */
@@ -191,6 +219,7 @@ body {
 }
 
 .our-team-img {
+  display: block;
   margin-bottom: 32px;
 }
 
@@ -281,6 +310,7 @@ body {
 /* ============Our works============ */
 
 .project-img {
+  display: block;
   margin-bottom: 32px;
 }
 
