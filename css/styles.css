@@ -9,6 +9,14 @@
   --secondary-background-color: #f4f4fd;
 }
 
+body {
+  font-family: var(--primary-font);
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+/* ============Components============ */
+
 .list {
   margin: 0;
   padding: 0;
@@ -19,12 +27,6 @@
   text-decoration: none;
 }
 
-body {
-  font-family: var(--primary-font);
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -32,10 +34,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-/* ============STUDIO============ */
-
-/* ============Components============ */
 
 .logo {
   font-family: var(--secondary-font);
@@ -62,7 +60,19 @@ body {
 
 /* ============/Components============ */
 
+/* ============STUDIO============ */
+
 /* ============Header============ */
+
+.page-header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
 
 .header-logo-second-part {
   color: var(--secondary-text-color);
@@ -70,6 +80,7 @@ body {
 
 .page-nav-list {
   display: flex;
+  margin-left: 76px;
 }
 
 .page-nav-item + .page-nav-item {
@@ -95,6 +106,7 @@ body {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contact-list {
@@ -172,6 +184,16 @@ body {
   margin-bottom: 120px;
 }
 
+.about-us-list {
+  display: flex;
+  margin: -12px;
+}
+
+.about-us-item {
+  width: 264px;
+  margin: 12px;
+}
+
 .about-us-title {
   margin-top: 0;
   margin-bottom: 8px;
@@ -200,6 +222,15 @@ body {
   margin-bottom: 120px;
 }
 
+.what-are-we-doing-list {
+  display: flex;
+  margin: -12px;
+}
+
+.what-are-we-doing-item {
+  margin: 12px;
+}
+
 .what-are-we-doing-img {
   display: block;
 }
@@ -214,7 +245,13 @@ body {
   background-color: var(--secondary-background-color);
 }
 
+.our-team-list {
+  display: flex;
+  margin: -12px;
+}
+
 .our-team-item {
+  margin: 12px;
   background-color: var(--primary-background-color);
 }
 
@@ -256,6 +293,12 @@ body {
   background-color: var(--secondary-text-color);
 }
 
+.footer-container {
+  margin-left: 156px;
+  width: 294px;
+  text-align: left;
+}
+
 .footer-logo-second-part {
   color: var(--secondary-background-color);
 }
@@ -280,6 +323,16 @@ body {
 .our-works-section {
   padding-top: 96px;
   padding-bottom: 120px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.filter-item + .filter-item {
+  margin-left: 24px;
 }
 
 .filter-btn {
@@ -308,6 +361,16 @@ body {
 }
 
 /* ============Our works============ */
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -24px -12px;
+}
+
+.project-item {
+  margin: 24px 12px;
+}
 
 .project-img {
   display: block;
