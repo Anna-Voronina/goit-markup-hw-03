@@ -9,6 +9,32 @@
   --secondary-background-color: #f4f4fd;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: var(--primary-font);
   color: var(--primary-text-color);
@@ -18,8 +44,6 @@ body {
 /* ============Components============ */
 
 .list {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -28,9 +52,9 @@ body {
 }
 
 .container {
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -45,8 +69,12 @@ body {
   color: var(--accent-color);
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .section-title {
-  margin-top: 0;
   margin-bottom: 72px;
   font-style: normal;
   font-weight: 700;
@@ -64,6 +92,10 @@ body {
 
 /* ============Header============ */
 
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .page-header-nav {
   display: flex;
   align-items: center;
@@ -74,12 +106,18 @@ body {
   align-items: center;
 }
 
+.page-header-logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .header-logo-second-part {
   color: var(--secondary-text-color);
 }
 
 .page-nav-list {
   display: flex;
+  align-items: center;
   margin-left: 76px;
 }
 
@@ -111,6 +149,7 @@ body {
 
 .contact-list {
   display: flex;
+  align-items: center;
 }
 
 .contact-item + .contact-item {
@@ -138,13 +177,11 @@ body {
 /* ============Hero============ */
 
 .hero-section {
-  margin-bottom: 120px;
   text-align: center;
   background-color: var(--secondary-text-color);
 }
 
 .hero-title {
-  margin-top: 0;
   margin-bottom: 48px;
   font-style: normal;
   font-weight: 700;
@@ -168,7 +205,6 @@ body {
   letter-spacing: 0.04em;
   background-color: var(--accent-color);
   color: var(--primary-background-color);
-  cursor: pointer;
 }
 
 .order-service-btn:hover,
@@ -179,10 +215,6 @@ body {
 /* ============/Hero============ */
 
 /* ============About us============ */
-
-.about-us-section {
-  margin-bottom: 120px;
-}
 
 .about-us-list {
   display: flex;
@@ -195,7 +227,6 @@ body {
 }
 
 .about-us-title {
-  margin-top: 0;
   margin-bottom: 8px;
   font-style: normal;
   font-weight: 500;
@@ -206,8 +237,6 @@ body {
 }
 
 .about-us-text {
-  margin-top: 0;
-  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -219,7 +248,7 @@ body {
 /* ============What are we doing============ */
 
 .what-are-we-doing-section {
-  margin-bottom: 120px;
+  padding-top: 0;
 }
 
 .what-are-we-doing-list {
@@ -231,17 +260,11 @@ body {
   margin: 12px;
 }
 
-.what-are-we-doing-img {
-  display: block;
-}
-
 /* ============/What are we doing============ */
 
 /* ============Our team============ */
 
 .our-team-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
   background-color: var(--secondary-background-color);
 }
 
@@ -256,12 +279,10 @@ body {
 }
 
 .our-team-img {
-  display: block;
   margin-bottom: 32px;
 }
 
 .our-team-name {
-  margin-top: 0;
   margin-bottom: 8px;
   font-style: normal;
   font-weight: 500;
@@ -273,8 +294,6 @@ body {
 }
 
 .our-team-position {
-  margin-top: 0;
-  margin-bottom: 0;
   padding-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
@@ -305,7 +324,6 @@ body {
 
 .footer-text {
   margin-top: 16px;
-  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -322,13 +340,12 @@ body {
 
 .our-works-section {
   padding-top: 96px;
-  padding-bottom: 120px;
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 120px;
+  margin-bottom: 72px;
 }
 
 .filter-item + .filter-item {
@@ -350,7 +367,6 @@ body {
   letter-spacing: 0.04em;
   background-color: var(--secondary-background-color);
   color: var(--accent-color);
-  cursor: pointer;
 }
 
 .filter-btn:hover,
@@ -373,12 +389,10 @@ body {
 }
 
 .project-img {
-  display: block;
   margin-bottom: 32px;
 }
 
 .project-title {
-  margin-top: 0;
   margin-bottom: 8px;
   font-style: normal;
   font-weight: 500;
@@ -389,8 +403,6 @@ body {
 }
 
 .project-filter {
-  margin-top: 0;
-  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
