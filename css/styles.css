@@ -121,8 +121,8 @@ body {
   margin-left: 76px;
 }
 
-.page-nav-item + .page-nav-item {
-  margin-left: 40px;
+.page-nav-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .page-nav-link {
@@ -152,8 +152,8 @@ body {
   align-items: center;
 }
 
-.contact-item + .contact-item {
-  margin-left: 40px;
+.contact-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .contact-link {
@@ -197,7 +197,6 @@ body {
   padding: 16px 32px;
   border: none;
 
-  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -218,12 +217,11 @@ body {
 
 .about-us-list {
   display: flex;
-  margin: -12px;
+  gap: 24px;
 }
 
 .about-us-item {
-  width: 264px;
-  margin: 12px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .about-us-title {
@@ -253,11 +251,12 @@ body {
 
 .what-are-we-doing-list {
   display: flex;
-  margin: -12px;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .what-are-we-doing-item {
-  margin: 12px;
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 /* ============/What are we doing============ */
@@ -270,16 +269,17 @@ body {
 
 .our-team-list {
   display: flex;
-  margin: -12px;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .our-team-item {
-  margin: 12px;
+  flex-basis: calc((100% - 72px) / 4);
   background-color: var(--primary-background-color);
 }
 
-.our-team-img {
-  margin-bottom: 32px;
+.our-team-content {
+  padding: 32px 16px;
 }
 
 .our-team-name {
@@ -294,7 +294,6 @@ body {
 }
 
 .our-team-position {
-  padding-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -314,8 +313,8 @@ body {
 
 .footer-container {
   margin-left: 156px;
+  margin-right: auto;
   width: 294px;
-  text-align: left;
 }
 
 .footer-logo-second-part {
@@ -348,8 +347,8 @@ body {
   margin-bottom: 72px;
 }
 
-.filter-item + .filter-item {
-  margin-left: 24px;
+.filter-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .filter-btn {
@@ -358,7 +357,6 @@ body {
   border-radius: 4px;
   padding: 12px 24px;
 
-  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -381,15 +379,18 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -24px -12px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .project-item {
-  margin: 24px 12px;
+  flex-basis: calc((100% - 48px) / 3);
 }
 
-.project-img {
-  margin-bottom: 32px;
+.project-description {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .project-title {
