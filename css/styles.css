@@ -191,7 +191,9 @@ body {
 }
 
 .order-service-btn {
-  display: inline-block;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   min-width: 169px;
   height: 56px;
   border-radius: 4px;
@@ -276,12 +278,12 @@ body {
 
 .our-team-item {
   flex-basis: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-background-color);
 }
 
 .our-team-content {
   padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-name {
