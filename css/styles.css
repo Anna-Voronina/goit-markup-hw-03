@@ -109,6 +109,7 @@ body {
 .page-header-logo {
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-right: 76px;
 }
 
 .header-logo-second-part {
@@ -118,11 +119,7 @@ body {
 .page-nav-list {
   display: flex;
   align-items: center;
-  margin-left: 76px;
-}
-
-.page-nav-item:not(:last-child) {
-  margin-right: 40px;
+  gap: 40px;
 }
 
 .page-nav-link {
@@ -150,10 +147,7 @@ body {
 .contact-list {
   display: flex;
   align-items: center;
-}
-
-.contact-item:not(:last-child) {
-  margin-right: 40px;
+  gap: 40px;
 }
 
 .contact-link {
@@ -177,11 +171,16 @@ body {
 /* ============Hero============ */
 
 .hero-section {
+  padding-top: 188px;
+  padding-bottom: 188px;
   text-align: center;
   background-color: var(--secondary-text-color);
 }
 
 .hero-title {
+  max-width: 496px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 48px;
   font-style: normal;
   font-weight: 700;
@@ -193,6 +192,8 @@ body {
 
 .order-service-btn {
   display: inline-block;
+  min-width: 169px;
+  height: 56px;
   border-radius: 4px;
   padding: 16px 32px;
   border: none;
@@ -275,6 +276,7 @@ body {
 
 .our-team-item {
   flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-background-color);
 }
 
@@ -317,12 +319,16 @@ body {
   width: 294px;
 }
 
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer-logo-second-part {
   color: var(--secondary-background-color);
 }
 
 .footer-text {
-  margin-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -338,17 +344,14 @@ body {
 /* ============Our works============ */
 
 .our-works-section {
-  padding-top: 96px;
+  padding: 96px 120px;
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
-}
-
-.filter-item:not(:last-child) {
-  margin-right: 24px;
+  gap: 24px;
 }
 
 .filter-btn {
